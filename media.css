@@ -1,0 +1,160 @@
+@media screen and (min-width:894px) and (max-width:950px) {
+    nav {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 1rem;
+    }
+    nav .logo {text-align: center;}
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        padding-right: 0;
+    }
+    nav li {margin: 1rem;}
+}
+@media screen and (min-width:768px) and (max-width:893px) {
+    nav {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: .25rem;
+    }
+    nav .logo img {margin-bottom: .25rem;}
+    nav ul {
+        flex-direction: column;
+        padding-right: 0%;
+        margin: auto;
+    }
+    nav li {margin: .25rem;}
+}
+@media screen and (max-width:767px) {
+    nav ul { display: none;}
+    nav .logo .fa-bars { display: block;}
+    nav .logo .fa-bars:hover {
+        color: var(--main-color); 
+    }
+    nav #check:checked + .small-screen {
+        display: block;
+        position: absolute;
+        top: 4.375rem;
+        right: .5rem;
+        height: fit-content;
+        text-align: center;
+        padding-right: 0;
+        width: fit-content;
+        /* margin-right: 2.3rem; */
+        border-radius: .25rem;
+        background-color: rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+    }
+    nav .small-screen li {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    }
+    nav .small-screen a { font-size: .75rem;}
+    nav .small-screen a:hover { 
+        color: var(--main-color);
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: .25rem;
+        
+    }
+}
+@media screen and (max-width:992px) {
+    .about .intro {
+        flex-direction: column;
+    }
+    .about .intro .intro-ach {
+        width: 100%;
+    }
+    .about .intro .intro-cv {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .about .row-ach {flex-wrap: wrap;}
+    .about .row-ach .box {
+        width: 50%;
+    }
+    .row-ach .b-1::before {
+        border-left: 0px dotted #e0dede;
+    }
+    .row-ach .b-0::after, .row-ach .b-2::after   {
+        content: "";
+        width: 100%;
+        bottom: -1px;
+        left: 0px;
+        border-bottom: 1px dotted #e0dede;
+        position: absolute;
+    }
+}
+@media screen and (max-width:768px) {
+    .service .skill-box {width: 100%;}
+}
+@media screen and (max-width:768px) {
+    .background .edu {
+        width: 100%;
+    }
+    .background .exp {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .background .skill-per {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .background .download {margin-top: 1.5rem;}
+}
+@media screen and (min-width:601px) and (max-width:992px) {
+    .portfolio .container1 {display: none;}
+    .portfolio .container2 {width: 100%; display: flex;}
+    .portfolio .column {width: 50%;}
+}
+@media screen and (max-width:600px) {
+    .portfolio .container1 {flex-wrap: wrap;}
+    .portfolio .column {width: 100%;}
+}
+@media screen and (max-width:992px) {
+    .review .review-cont {flex-direction: column;}
+    .review .review-cont .rev {
+        width: 100%;
+        margin: .78rem 0;
+    }
+}
+@media screen and (max-width:1200px) {
+    .contact .contact-cont .required-data {
+        flex-wrap: wrap;
+    }
+    .contact .contact-cont .fill-info input {
+        width: 100%;
+    }
+}
+@media screen and (max-width:769px) {
+    .contact .contact-cont {
+        flex-direction: column-reverse;
+    }
+    .contact-cont .address {
+        width: 100%;
+        text-align: center;
+    }
+    .contact-cont .chat-us {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+    .contact-box ul {justify-content: center;}
+}
+@media screen and (max-width:992px) {
+    footer .foot-cont {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .foot-cont .copy-right {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    footer .foot-cont .policy {
+        width: 100%; 
+        justify-content: center;
+    }
+}
